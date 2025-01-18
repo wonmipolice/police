@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일용 웹사이트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 1em 0;
+            padding: 0.7em 1.5em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>모바일용 웹사이트</h1>
+    </header>
+
+    <nav>
+        <a href="#">홈</a>
+        <a href="#about">소개</a>
+        <a href="#contact">연락처</a>
+    </nav>
+
+    <main>
+        <h2>환영합니다!</h2>
+        <p>이 웹사이트는 모바일 친화적으로 설계되었습니다.</p>
+        <a href="#" class="btn">더 알아보기</a>
+    </main>
+
+    <footer>
+        &copy; 2025 모바일 웹사이트. 모든 권리 보유.
+    </footer>
+</body>
+</html>
